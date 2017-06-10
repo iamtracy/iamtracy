@@ -15,6 +15,13 @@ body {
   background: #f1f1f1;
   color: #0a1612;
 }
+section {
+  padding: 2rem 0;
+}
+.progress {
+  width: 25%;
+  margin: 50vh auto 0;
+}
 
 /*--------------------------------------------------------------
 # Navigation
@@ -23,9 +30,6 @@ body {
 nav {
   background-color: #192A30;
   color: #C5C1C0;
-}
-.nav-wrapper {
-  text-align: center;
 }
 main {
   flex: 1 0 auto;
