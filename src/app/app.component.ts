@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  selectOptions = [
+    {name: 'one'},
+    {name: 'one'},
+    {name: 'one'},
+    {name: 'one'},
+  ];
+
 }

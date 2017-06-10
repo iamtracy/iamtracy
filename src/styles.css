@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/*--------------------------------------------------------------
+# Body
+--------------------------------------------------------------*/
+
+.screen-reader-text {
+  display: none;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #f1f1f1;
+  color: #0a1612;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+nav {
+  background-color: #192A30;
+  color: #C5C1C0;
+}
+.nav-wrapper {
+  text-align: center;
+}
+main {
+  flex: 1 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.page-footer {
+  background-color: #192A30;
+}
