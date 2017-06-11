@@ -1,25 +1,33 @@
-<nav class="nav-extended">
+<nav class="nav-extended" [class.fixed]="navIsFixed">
   <div class="container">
-    <div class="nav-wrapper">
-
+    <div class="nav-wrapper hide-on-med-and-down" [class.profile-hide]="displayProfile" [class.profile-show]="!displayProfile">
       <div class="profile">
-        <img src="../../assets/img/profile.png" alt="" class="circle responsive-img">
-        <a href="#" class="brand-logo">iamtracy.com</a>
+        <div class="card-panel transparent" style="box-shadow:none">
+          <div class="row valign-wrapper profile-info">
+            <div class="col offset-s3">
+              <img src="../../assets/img/profile.png" [class.hide]="displayProfile" alt="" class="circle responsive-img">
+            </div>
+            <div class="col">
+              <span class="black-text">
+                <a href="#" class="brand-logo" [class.hide]="displayProfile">iamtracy <span style="color: #607d8b">| Developer</span></a>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-
-
     </div>
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a routerLink="/" routerLinkActive="active">Home</a></li>
         <li class="tab"><a routerLink="/work" routerLinkActive="active">Work</a></li>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="tab"><a href="sass.html">WordPress</a></li>
-          <li class="tab"><a href="collapsible.html">NodeJS</a></li>
-          <li class="tab" class="tab"><a href="badges.html">JavaScript</a></li>
+          <li class="tab"><a routerLink="/wordpress" routerLinkActive="active">WordPress</a></li>
+          <li class="tab"><a routerLink="/nodejs" routerLinkActive="active">NodeJS</a></li>
+          <li class="tab" class="tab"><a routerLink="/general" routerLinkActive="active">General</a></li>
         </ul>
         <!--<li class="tab"><a routerLink="/about" routerLinkActive="active">About</a></li>-->
       </ul>
+
     </div>
   </div>
 </nav>

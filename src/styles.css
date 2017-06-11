@@ -17,6 +17,7 @@ body {
 }
 section {
   padding: 3rem 0;
+  min-height: 72vh;
 }
 .page-loading,
 .home-loading {
@@ -31,14 +32,33 @@ section {
 .home-section:not(:first-child):not(:last-child) {
   padding: 2.5rem 0;
 }
+blockquote {
+  border-left: 5px solid #dddddd;
+}
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 
+.fixed {
+  position: fixed;
+}
+.profile-show {
+  transition: all 0.4s ease-in;
+  visibility: visible;
+  height: inherit !important;
+  min-height: inherit !important;
+}
+.profile-hide {
+  height: 0 !important;
+  min-height: 0 !important;
+  transition: all 0.2s ease-in;
+  visibility: hidden;
+}
 nav {
   background-color: #263238;
   color: #C5C1C0;
+  z-index: 9999999999999999999;
 }
 main {
   flex: 1 0 auto;
@@ -53,12 +73,23 @@ main {
   flex-direction: column;
 }
 .profile img {
-  margin: 2.5rem auto 0rem;
+  max-width: 140px;
+}
+.profile-info {
+  margin-bottom: 0;
+}
+.profile .card-panel {
+  margin: 0.5rem 0 0 0;
+}
+.profile span {
+  color: #748a94;
 }
 nav .brand-logo {
   position: relative;
   text-align: center;
   margin-bottom: 1.25rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.7px;
 }
 
 /*--------------------------------------------------------------
@@ -101,8 +132,12 @@ nav .brand-logo {
   transition: color .3s ease;
   text-transform: uppercase;
 }
-.card.github {
-  background: #223840;
+.card .card-content .card-title i {
+  color: #DDB938;
+}
+.card.github,
+.home-section .card .card-content {
+  background: #455a64;
 }
 .card.github .card-content {
   color: #f1f1f1;
@@ -110,6 +145,9 @@ nav .brand-logo {
 .card-panel {
   color: #fff;
   text-align: center;
+}
+.home-section .card .card-content {
+  color: #fff;
 }
 
 /*--------------------------------------------------------------

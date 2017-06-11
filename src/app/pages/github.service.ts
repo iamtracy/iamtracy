@@ -17,12 +17,16 @@ export class GithubService {
   constructor(private http: Http) { }
 
   getCards() {
-    return this.http
-            .get(this.githubAPI)
+    return  this.http
+              .get(this.githubAPI)
               .map((response: Response) => {
                 const data = response.json();
                 return this.cards = data;
               })
+  }
+
+  getJSCards() {
+    return  this.cards.filter(item => item.language == 'JavaScript');
   }
 
 }
