@@ -18,8 +18,14 @@ body {
 section {
   padding: 2rem 0;
 }
-.progress {
+.page-loading,
+.home-loading {
   width: 25%;
+}
+.page-loading {
+  margin: 10vh auto 0
+}
+.home-loading {
   margin: 50vh auto 0;
 }
 
@@ -36,9 +42,63 @@ main {
 }
 
 /*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.intro {
+  position: relative;
+}
+.intro-content,
+.intro-location {
+  background: #f1f1f1;
+  z-index: 1;
+  width: 100%;
+}
+.intro-content {
+  max-width: 235px;
+}
+.intro-location {
+  max-width: 170px;
+}
+.intro-services {
+  max-width: 170px;
+}
+
+/*.intro-section:before {
+  content: "";
+  position: absolute;
+  top: 20.5px;
+  left: 14px;
+  width: 97.1%;
+  border-bottom: 4px solid #dddddd;
+  z-index: -1;
+}*/
+
+
+/*--------------------------------------------------------------
+# Card
+--------------------------------------------------------------*/
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #DDB938;
+  margin-right: 24px;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+.card.github {
+  background: #223840;
+}
+.card.github .card-content {
+  color: #f1f1f1;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 .page-footer {
   background-color: #192A30;
+}
+.page-footer .footer-copyright {
+  background-color: #0a1612;
 }

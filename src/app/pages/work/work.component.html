@@ -1,3 +1,6 @@
-<p>
-  work works!
-</p>
+<div class="row">
+  <div class="progress page-loading" *ngIf="loading">
+    <div class="indeterminate"></div>
+  </div>
+  <app-cards [card]="card" [index]="i" *ngFor="let card of cards; let i = index;"></app-cards>
+</div>

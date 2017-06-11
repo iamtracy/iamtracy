@@ -5,14 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app';
-
-  selectOptions = [
-    {name: 'one'},
-    {name: 'one'},
-    {name: 'one'},
-    {name: 'one'},
-  ];
-
-}
+export class AppComponent {}
