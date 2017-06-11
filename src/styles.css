@@ -13,10 +13,10 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background: #f1f1f1;
-  color: #0a1612;
+  color: #263238;
 }
 section {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 .page-loading,
 .home-loading {
@@ -28,17 +28,23 @@ section {
 .home-loading {
   margin: 50vh auto 0;
 }
+.home-section:not(:first-child):not(:last-child) {
+  padding: 2.5rem 0;
+}
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 
 nav {
-  background-color: #192A30;
+  background-color: #263238;
   color: #C5C1C0;
 }
 main {
   flex: 1 0 auto;
+}
+.tabs.tabs-transparent .indicator {
+  background-color: #DDB938;
 }
 
 /*--------------------------------------------------------------
@@ -47,6 +53,7 @@ main {
 
 .intro {
   position: relative;
+  padding-bottom: 0.2rem;
 }
 .intro-content,
 .intro-location {
@@ -57,23 +64,18 @@ main {
 .intro-content {
   max-width: 235px;
 }
-.intro-location {
-  max-width: 170px;
-}
+.intro-location,
 .intro-services {
-  max-width: 170px;
+  max-width: 160px;
 }
-
-/*.intro-section:before {
+.intro-section:before {
   content: "";
   position: absolute;
-  top: 20.5px;
-  left: 14px;
-  width: 97.1%;
+  top: 19px;
+  width: 100%;
   border-bottom: 4px solid #dddddd;
   z-index: -1;
-}*/
-
+}
 
 /*--------------------------------------------------------------
 # Card
@@ -91,6 +93,10 @@ main {
 .card.github .card-content {
   color: #f1f1f1;
 }
+.card-panel {
+  color: #fff;
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -100,5 +106,5 @@ main {
   background-color: #192A30;
 }
 .page-footer .footer-copyright {
-  background-color: #0a1612;
+  background-color: #263238;
 }
