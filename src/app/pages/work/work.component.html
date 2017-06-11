@@ -1,6 +1,80 @@
-<div class="row">
-  <div class="progress page-loading" *ngIf="loading">
+<div *ngIf="loading">
+  <div class="progress page-loading">
     <div class="indeterminate"></div>
   </div>
-  <app-cards [card]="card" [index]="i" *ngFor="let card of cards; let i = index;"></app-cards>
+</div>
+<div *ngIf="!loading">
+
+  <div class="row">
+    <div class="col s12">
+      <div class="intro">
+        <div class="intro-services intro-section">
+          <div class="intro-content">
+            <i class="material-icons">language</i>
+            <span class="flow-text">Live Sites</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="../../assets/img/zorbas.png">
+        </div>
+        <div class="card-content">
+          <p>A WordPress theme build from scratch. As the is designed for a videographer, the demo reel is displayed front and center.
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="http://www.mikezorbas.com"><i class="material-icons">language</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="../../assets/img/brian.png">
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="http://brianweberdesign.com/"><i class="material-icons">language</i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="../../assets/img/xpo.png">
+        </div>
+        <div class="card-content">
+          <p>A company resource, XPOCAST Guide walks INXPO clients through the process of presenting on a live or recorded webcasting session.</p>
+        </div>
+        <div class="card-action">
+          <a href="http://inxpo-guide.netlify.com/index.html"><i class="material-icons">language</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="intro">
+        <div class="intro-services intro-section">
+          <div class="intro-content">
+            <i class="material-icons">assessment</i>
+            <span class="flow-text">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <app-cards [card]="card" [index]="i" *ngFor="let card of cards; let i = index;"></app-cards>
+  </div>
 </div>

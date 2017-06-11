@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/rx';
 @Injectable()
 export class GithubService {
 
-  apiToken = '2160ec8382b78689408c65f3904daaff1daf2a46';
+  
 
   githubAPI = 'https://api.github.com/users/iamtracy/repos?access_token=' + this.apiToken;
   cards = <any>[];
