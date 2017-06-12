@@ -160,3 +160,11 @@ nav .brand-logo {
 .page-footer .footer-copyright {
   background-color: #263238;
 }
+@media screen and (max-width: 480px) {
+  section {
+    padding: 4rem 0;
+  }
+  .nav-extended {
+    position: fixed;
+  }
+}
